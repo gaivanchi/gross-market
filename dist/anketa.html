@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="title" content="Гросс маркет - Тестовое задание">
+    <meta name="description" content="Магазин с разнообразным ассортиментом, который нельзя найти в большинстве магазинов.">
+    <meta property="og:image" content="./img/share.jpg">
+    <meta property="og:title" content="Гросс маркет - Тестовое задание">
+    <meta property="og:description" content="Магазин с разнообразным ассортиментом, который нельзя найти в большинстве магазинов.">
+    <meta property="og:type" content="website">
+    <title>Гросс маркет - Тестовое задание</title>
+    <link rel="image_src" href="./img/share.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="21x30" href="./img/icons/favicon-21x30.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./assets/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css?v=<?= time() ?>">
+  </head>
+  <body>
+    <header class="header header-form">
+      <div class="container"><a class="header__logo" href="./index.html">
+          <div class="header__logo--icon"><svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 10C16.299 10 21 14.4772 21 20C21 25.5228 16.299 30 10.5 30C4.70101 30 -1.95703e-07 25.5228 -4.37114e-07 20C-6.78525e-07 14.4772 4.70101 10 10.5 10Z" fill="url(#paint0_radial_20_530)"/>
+<path d="M10.5 5C16.299 5 21 9.47715 21 15C21 20.5228 16.299 25 10.5 25C4.70101 25 -1.95703e-07 20.5228 -4.37114e-07 15C-6.78525e-07 9.47715 4.70101 5 10.5 5Z" fill="url(#paint1_radial_20_530)"/>
+<path d="M10.5 -4.5897e-07C16.299 -7.12451e-07 21 4.47715 21 10C21 15.5228 16.299 20 10.5 20C4.70101 20 -1.95703e-07 15.5228 -4.37114e-07 10C-6.78525e-07 4.47715 4.70101 -2.05488e-07 10.5 -4.5897e-07Z" fill="url(#paint2_radial_20_530)"/>
+<defs>
+<radialGradient id="paint0_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 27.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint1_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.45 -5) rotate(63.0922) scale(27.0685 28.4998)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint2_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 17.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+</defs>
+</svg>
+
+          </div>
+          <div class="header__logo--text h2">гросс маркет</div></a><a class="header__close" href="./index.html"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.8976 23.0959C24.4809 22.5074 24.4765 21.5573 23.8877 20.9742L16.8362 13.991C16.2474 13.4079 16.243 12.4579 16.8263 11.8693L23.8061 4.82645C24.3893 4.23807 24.385 3.28837 23.7967 2.70521L23.0958 2.01051C22.5072 1.42715 21.5571 1.43157 20.974 2.02038L13.9955 9.06723C13.4126 9.65588 12.4628 9.66049 11.8742 9.07751L4.82462 2.09557C4.23802 1.51459 3.29221 1.51687 2.70842 2.10066L2.01935 2.78973C1.43173 3.37736 1.43384 4.33073 2.02405 4.91574L9.0751 11.9046C9.66329 12.4876 9.66771 13.437 9.08496 14.0254L2.09534 21.0835C1.51441 21.6701 1.51672 22.6158 2.10049 23.1996L2.78967 23.8888C3.37727 24.4764 4.3306 24.4743 4.91562 23.8841L11.911 16.8274C12.4942 16.239 13.4439 16.2349 14.0323 16.8181L21.0816 23.806C21.67 24.3893 22.6198 24.3851 23.203 23.7967L23.8976 23.0959Z" fill="black"/>
+</svg>
+</a></div>
+    </header>
+    <div class="page-form">
+      <div class="container">
+        <h1>Работа твоей мечты</h1>
+        <div class="content">
+          <div class="content__form">
+            <form class="form" id="form" action="./thanks.html">
+              <div class="form-item">
+                <label>Вакансия *</label>
+                <select class="form-control" name="vacancy" required>
+                  <option class="placeholder" value="" disabled selected hidden>выберите вакансию</option>
+                  <option value="manager">товаровед</option>
+                  <option value="driver">водитель</option>
+                  <option value="baker">пекарь</option>
+                  <option value="cashier">кассир</option>
+                  <option value="seller">продавец</option>
+                  <option value="cook">повар</option>
+                  <option value="stockman">приёмщик</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label>ФИО *</label>
+                <input class="form-control" type="text" name="name" required>
+              </div>
+              <div class="form-group">
+                <div class="form-item">
+                  <label>Дата рождения *</label>
+                  <input class="form-control" type="text" name="birthday" placeholder="28.07.2002" required>
+                </div>
+                <div class="form-item radio">
+                  <div class="label">Пол</div>
+                  <div class="radio-buttons">
+                    <div class="radio-button">
+                      <input type="radio" name="gender" value="male">
+                      <label>мужской</label>
+                    </div>
+                    <div class="radio-button">
+                      <input type="radio" name="gender" value="female">
+                      <label>женский</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-item">
+                  <label>Контактый телефон *</label>
+                  <input class="form-control" type="tel" name="phonenumber" placeholder="+7 (" required>
+                </div>
+                <div class="form-item">
+                  <label>Электронная почта</label>
+                  <input class="form-control" type="email" name="email" placeholder="example@mail.com">
+                </div>
+              </div>
+              <div class="form-item">
+                <label>Резюме</label>
+                <textarea class="form-control" type="text" name="resume"></textarea>
+              </div>
+              <div class="form-item file">
+                <label>выберите или перетащите файл</label>
+                <input type="file" name="file">
+              </div>
+              <div class="form-group">
+                <div class="form-item">
+                  <div class="label">Капча</div>
+                  <div class="checkbox-captcha">
+                    <input type="checkbox" name="captcha" required>
+                    <label>я не робот</label>
+                  </div>
+                </div>
+                <div class="form-item note text-2">* поля для обязательного заполнения</div>
+              </div>
+              <div class="form-item">
+                <div class="checkbox-agreement">
+                  <input type="checkbox" name="agreement" required>
+                  <label>я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений&nbsp;*</label>
+                </div>
+              </div>
+              <input class="text-main bg-gray" type="submit" value="отправить">
+            </form>
+          </div>
+          <div class="content__text">
+            <h2>Наша суперцель</h2>
+            <p class="text-main">
+              — стать любимым магазином для каждой российской семьи.
+              <br><br>
+              Сотни тысяч наших сотрудников ежедневно работают над её достижением.
+              <br><br>
+              Мы уверены, что в ближайшие годы достигнем&nbsp;этого и будет здорово, если&nbsp;вместе&nbsp;с&nbsp;тобой.
+            </p><a class="phone h3 bg-gray" href="tel:+79264331416" target="_blank">+7 (926) 433-14-16</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fnbx" id="fnbx-privicy" style="display: none">
+      <h1>Обработка данных</h1>
+      <ul class="items">
+        <li class="item">
+          <div class="item-title text-main">1. Что регулирует настоящая политика конфиденциальности</div>
+          <p class="item-content text-3">
+            Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получить о Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе  «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров.
+            <br><br>
+            <span>Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов.</span>
+          </p>
+        </li>
+        <li class="item">
+          <div class="item-title text-main">2. Кто обрабатывает информацию</div>
+          <p class="item-content text-3">Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+        </li>
+        <li class="item">
+          <div class="item-title text-main">3. Какова цель данной Политики</div>
+          <p class="item-content text-3">Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.</p>
+        </li>
+        <li class="item">
+          <div class="item-title text-main">4. Какую Персональную информацию о Вас собирает Гросс маркет</div>
+          <p class="item-content text-3">Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+        </li>
+      </ul>
+    </div>
+    <footer class="footer bg-gray">
+      <div class="container container-top">
+        <div class="footer-top bg-white"><a class="footer__logo" href="">
+            <div class="footer__logo--icon"><svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 10C16.299 10 21 14.4772 21 20C21 25.5228 16.299 30 10.5 30C4.70101 30 -1.95703e-07 25.5228 -4.37114e-07 20C-6.78525e-07 14.4772 4.70101 10 10.5 10Z" fill="url(#paint0_radial_20_530)"/>
+<path d="M10.5 5C16.299 5 21 9.47715 21 15C21 20.5228 16.299 25 10.5 25C4.70101 25 -1.95703e-07 20.5228 -4.37114e-07 15C-6.78525e-07 9.47715 4.70101 5 10.5 5Z" fill="url(#paint1_radial_20_530)"/>
+<path d="M10.5 -4.5897e-07C16.299 -7.12451e-07 21 4.47715 21 10C21 15.5228 16.299 20 10.5 20C4.70101 20 -1.95703e-07 15.5228 -4.37114e-07 10C-6.78525e-07 4.47715 4.70101 -2.05488e-07 10.5 -4.5897e-07Z" fill="url(#paint2_radial_20_530)"/>
+<defs>
+<radialGradient id="paint0_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 27.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint1_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.45 -5) rotate(63.0922) scale(27.0685 28.4998)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint2_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 17.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+</defs>
+</svg>
+
+            </div>
+            <div class="footer__logo--text h2">гросс маркет</div></a>
+          <div class="footer__links"><a class="footer__links--share h2" href="./index.html">поделиться</a>
+            <div class="footer__links--soc"><a class="footer__links--fb" href="./index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="iconmonstr-facebook-4 1" clip-path="url(#clip0_29_646)">
+<path id="Vector" d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15 8H13.65C13.112 8 13 8.221 13 8.778V10H15L14.791 12H13V19H10V12H8V10H10V7.692C10 5.923 10.931 5 13.029 5H15V8Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_29_646">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a><a class="footer__links--vk" href="./index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_29_648)">
+<path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.344 16.163H16.477C15.422 16.163 15.245 15.562 14.375 14.694C13.59 13.909 13.155 14.511 13.173 15.629C13.179 15.926 13.032 16.163 12.678 16.163C11.573 16.163 9.984 16.319 8.374 14.583C6.727 12.804 5 9.235 5 8.884C5 8.676 5.172 8.583 5.459 8.583H7.357C7.86 8.583 7.902 8.832 8.043 9.151C8.627 10.482 10.024 13.153 10.397 11.662C10.611 10.806 10.698 8.823 9.782 8.652C9.262 8.556 10.178 8 11.504 8C11.834 8 12.192 8.035 12.558 8.12C13.231 8.276 13.234 8.578 13.224 9.018C13.19 10.684 12.989 11.804 13.428 12.087C13.847 12.358 14.949 10.585 15.532 9.216C15.691 8.838 15.723 8.584 16.175 8.584H18.497C19.713 8.584 18.338 10.332 17.287 11.696C16.44 12.795 16.485 12.816 17.47 13.73C18.171 14.381 19 15.27 19 15.773C19 16.011 18.814 16.163 18.344 16.163Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_29_648">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer__copyright text-2">&copy; Гросс маркет %year%</div><a class="footer__privicy-policy text-2" data-fancybox href="#fnbx-privicy">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script src="./assets/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./assets/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="./assets/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/scripts.min.js?v=<?= time() ?>"></script>
+  </body>
+</html>

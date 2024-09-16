@@ -1,0 +1,79 @@
+doctype html
+html
+  include ../../common/_head
+  body
+    include  ../../common/header/header-form
+
+    .page-form
+      .container
+        h1 Работа твоей мечты
+        .content
+          .content__form
+            form.form#form(action="./thanks.html")
+              .form-item
+                label Вакансия *
+                select.form-control(name="vacancy" required)
+                  option.placeholder(value="" disabled selected hidden) выберите вакансию
+                  option(value="manager") товаровед
+                  option(value="driver") водитель
+                  option(value="baker") пекарь
+                  option(value="cashier") кассир
+                  option(value="seller") продавец
+                  option(value="cook") повар
+                  option(value="stockman") приёмщик
+              .form-item
+                label ФИО *
+                input.form-control(type="text" name="name" required)
+              .form-group
+                .form-item
+                  label Дата рождения *
+                  input.form-control(type="text" name="birthday" placeholder="28.07.2002" required)
+                .form-item.radio
+                  .label Пол
+                  .radio-buttons
+                    .radio-button
+                      input(type="radio" name="gender" value="male")
+                      label мужской
+                    .radio-button
+                      input(type="radio" name="gender" value="female")
+                      label женский
+              .form-group
+                .form-item
+                  label Контактый телефон *
+                  input.form-control(type="tel" name="phonenumber" placeholder="+7 (" required)
+                .form-item
+                  label Электронная почта
+                  input.form-control(type="email" name="email" placeholder="example@mail.com")
+              .form-item
+                label Резюме
+                textarea.form-control(type="text" name="resume")
+              .form-item.file
+                label выберите или перетащите файл
+                input(type="file" name="file")
+              .form-group
+                .form-item
+                  .label Капча
+                  .checkbox-captcha
+                    input(type="checkbox" name="captcha" required)
+                    label я не робот
+                .form-item.note.text-2 * поля для обязательного заполнения
+              .form-item
+                .checkbox-agreement
+                  input(type="checkbox" name="agreement" required)
+                  label я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений&nbsp;*
+              input.text-main.bg-gray(type="submit" value="отправить")
+
+          .content__text
+            h2 Наша суперцель
+            p.text-main
+              | — стать любимым магазином для каждой российской семьи.
+              | <br><br>
+              | Сотни тысяч наших сотрудников ежедневно работают над её достижением.
+              | <br><br>
+              | Мы уверены, что в ближайшие годы достигнем&nbsp;этого и будет здорово, если&nbsp;вместе&nbsp;с&nbsp;тобой.
+            a.phone.h3.bg-gray(href="tel:+79264331416" target="_blank") +7 (926) 433-14-16
+
+    include ../../common/modal/modal-privicy.pug
+    
+    include ../../common/footer/footer
+    include ../../common/_foot

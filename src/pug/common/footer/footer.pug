@@ -1,0 +1,20 @@
+footer.footer.bg-gray
+  .container.container-top
+    .footer-top.bg-white
+      a.footer__logo(href="")
+        .footer__logo--icon
+          include ../../../img/svg/logo.svg
+        .footer__logo--text.h2 гросс маркет
+      .footer__links
+        a.footer__links--share.h2(href="./index.html") поделиться
+        .footer__links--soc
+          //- a.footer__links--fb(href="https://www.messenger.com/t/Username" target="_blank")
+          a.footer__links--fb(href="./index.html")
+            include ../../../img/svg/fb.svg
+          //- a.footer__links--vk(href="https://vk.me/Username" target="_blank")
+          a.footer__links--vk(href="./index.html")
+            include ../../../img/svg/vk.svg
+  .container
+    .footer-bottom
+      .footer__copyright.text-2 &copy; Гросс маркет %year%
+      a.footer__privicy-policy.text-2(data-fancybox href="#fnbx-privicy") Политика обработки персональных данных

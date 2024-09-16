@@ -1,0 +1,142 @@
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: $mainfont;
+  font-weight: 500;
+  line-height: normal;
+  color: $black-color;
+  font-size: 16px;
+  // overflow-x: hidden;
+  @include breakpoint(sm) {
+    font-size: 18px;
+  }
+  @include breakpoint(lg) {
+    font-size: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  @include breakpoint(sm) {
+    max-width: 690px;
+    padding: 0;
+  }
+  @include breakpoint(lg) {
+    max-width: 1110px;
+  }
+}
+
+h1,
+.h1 {
+  font-family: $mainfont;
+  font-size: 48px;
+  line-height: 44px;
+  font-weight: 500;
+  @include breakpoint(sm) {
+    font-size: 72px;
+    line-height: 66px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: $mainfont;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 500;
+  @include breakpoint(sm) {
+    font-size: 32px;
+  }
+}
+
+h3,
+.h3 {
+  font-family: $mainfont;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.text-main {
+  font-family: $mainfont;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.text-2 {
+  font-family: $mainfont;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.text-3 {
+  font-family: $mainfont;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: $yellow-color;
+}
+.bg-gray {
+  background-color: $gray-color;
+}
+.bg-white {
+  background-color: $white-color;
+}
+
+
+#fnbx-privicy {
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 16px;
+  border-radius: 0;
+  @include breakpoint(sm) {
+    max-width: 690px;
+    padding: 32px 24px;
+    border-radius: 8px;
+  }
+  @include breakpoint(lg) {
+    max-width: 1110px;
+    padding: 72px 95px;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    @include breakpoint(sm) {
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .item {
+      &-title {
+
+      }
+      &-content {
+        margin-top: 24px;
+        span {
+          color: $darkGray-color;
+        }
+      }
+    }
+  }
+  .fancybox-button {
+    top: 26px;
+    right: 26px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+  }
+}

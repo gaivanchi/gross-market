@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="title" content="Гросс маркет - Тестовое задание">
+    <meta name="description" content="Магазин с разнообразным ассортиментом, который нельзя найти в большинстве магазинов.">
+    <meta property="og:image" content="./img/share.jpg">
+    <meta property="og:title" content="Гросс маркет - Тестовое задание">
+    <meta property="og:description" content="Магазин с разнообразным ассортиментом, который нельзя найти в большинстве магазинов.">
+    <meta property="og:type" content="website">
+    <title>Гросс маркет - Тестовое задание</title>
+    <link rel="image_src" href="./img/share.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="21x30" href="./img/icons/favicon-21x30.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./assets/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css?v=<?= time() ?>">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container"><a class="header__logo" href="./index.html">
+          <div class="header__logo--icon"><svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 10C16.299 10 21 14.4772 21 20C21 25.5228 16.299 30 10.5 30C4.70101 30 -1.95703e-07 25.5228 -4.37114e-07 20C-6.78525e-07 14.4772 4.70101 10 10.5 10Z" fill="url(#paint0_radial_20_530)"/>
+<path d="M10.5 5C16.299 5 21 9.47715 21 15C21 20.5228 16.299 25 10.5 25C4.70101 25 -1.95703e-07 20.5228 -4.37114e-07 15C-6.78525e-07 9.47715 4.70101 5 10.5 5Z" fill="url(#paint1_radial_20_530)"/>
+<path d="M10.5 -4.5897e-07C16.299 -7.12451e-07 21 4.47715 21 10C21 15.5228 16.299 20 10.5 20C4.70101 20 -1.95703e-07 15.5228 -4.37114e-07 10C-6.78525e-07 4.47715 4.70101 -2.05488e-07 10.5 -4.5897e-07Z" fill="url(#paint2_radial_20_530)"/>
+<defs>
+<radialGradient id="paint0_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 27.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint1_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.45 -5) rotate(63.0922) scale(27.0685 28.4998)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint2_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 17.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+</defs>
+</svg>
+
+          </div>
+          <div class="header__logo--text h2">гросс маркет</div></a>
+        <div class="header__links"><a class="header__links--phone-icon" href="tel:+79264331416" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 22.621L16.479 15.826C16.471 15.83 14.505 16.796 14.415 16.837C12.175 17.923 7.61604 9.017 9.80604 7.843L11.889 6.817L8.39604 0L6.29004 1.039C-0.911963 4.794 10.523 27.021 17.89 23.654C18.011 23.599 19.992 22.625 20 22.621Z" fill="black"/>
+</svg>
+</a><a class="header__links--phone text-main" href="tel:+79264331416" target="_blank">+7 (926) 433-14-16</a><a class="header__links--button text-main bg-yellow" href="./anketa.html">заполнить анкету</a></div>
+      </div>
+    </header>
+    <div class="page-main">
+      <section class="block-1 bg-gray">
+        <div class="banners owl-carousel">
+          <div class="banner banner-1">
+            <div class="container">
+              <h1 class="title">У тебя к&nbsp;этому талант</h1>
+              <div class="img-container">
+                <div class="name h3 bg-white">валентин</div>
+                <div class="vacancy h3 bg-white">пекарь</div>
+              </div>
+            </div>
+          </div>
+          <div class="banner banner-2">
+            <div class="container">
+              <h1 class="title">У тебя всё&nbsp;под контролем</h1>
+              <div class="img-container">
+                <div class="name h3 bg-white">ксения</div>
+                <div class="vacancy h3 bg-white">товаровед</div>
+              </div>
+            </div>
+          </div>
+          <div class="banner banner-3">
+            <div class="container">
+              <h1 class="title">У тебя к&nbsp;этому талант</h1>
+              <div class="img-container">
+                <div class="name h3 bg-white">валентин</div>
+                <div class="vacancy h3 bg-white">пекарь</div>
+              </div>
+            </div>
+          </div>
+          <div class="banner banner-4">
+            <div class="container">
+              <h1 class="title">У тебя всё&nbsp;под контролем</h1>
+              <div class="img-container">
+                <div class="name h3 bg-white">ксения</div>
+                <div class="vacancy h3 bg-white">товаровед</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="nav-container bg-white">
+            <button class="banners-prev disabled"></button>
+            <button class="banners-next"></button>
+          </div>
+        </div>
+      </section>
+      <section class="block-2">
+        <div class="container">
+          <h2>вакансии в гросс маркете</h2>
+          <div class="nav-container bg-white">
+            <button class="cards-prev disabled"></button>
+            <button class="cards-next"></button>
+          </div>
+        </div>
+        <div class="cards owl-carousel">
+          <div class="card card-1 bg-gray">
+            <div class="card-name h3 bg-white">товаровед</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-1.png" alt="">
+          </div>
+          <div class="card card-2 bg-gray">
+            <div class="card-name h3 bg-white">водитель</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-2.png" alt="">
+          </div>
+          <div class="card card-3 bg-gray">
+            <div class="card-name h3 bg-white">пекарь</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-3.png" alt="">
+          </div>
+          <div class="card card-4 bg-gray">
+            <div class="card-name h3 bg-white">кассир</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-4.png" alt="">
+          </div>
+          <div class="card card-5 bg-gray">
+            <div class="card-name h3 bg-white">подавец</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-5.png" alt="">
+          </div>
+          <div class="card card-6 bg-gray">
+            <div class="card-name h3 bg-white">повар</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-6.png" alt="">
+          </div>
+          <div class="card card-7 bg-gray">
+            <div class="card-name h3 bg-white">приёмщик</div>
+            <div class="card-info text-main">Доставка товара по&nbsp;магазинам и&nbsp;гипермаркетам компании в&nbsp;обслуживаемом регионе</div><img class="card-image" src="./img/images/cards/card-7.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="block-3">
+        <div class="container">
+          <h2>мы в инстаграме</h2>
+          <div class="items">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+            <div class="item item-7"></div>
+            <div class="item item-8"></div>
+            <div class="item item-9"></div>
+            <div class="item item-10"></div>
+            <div class="item item-11"></div>
+            <div class="item item-12"></div>
+            <div class="item item-13"></div>
+          </div>
+          <button class="text-main bg-gray">показать еще</button>
+        </div>
+      </section>
+      <section class="block-4">
+        <div class="container">
+          <h2>география</h2>
+        </div>
+        <div class="map-container">
+          <div id="map"></div>
+        </div>
+        <div class="container">
+          <div class="map-controls">
+            <div class="filter">
+              <button class="filter-companies text-main bg-white">юрлица</button>
+              <button class="filter-individuals text-main bg-white">физлица</button>
+              <button class="filter-all active text-main bg-white">показать всё</button>
+            </div>
+            <div class="zoom bg-white">
+              <button class="zoom-plus"></button>
+              <button class="zoom-minus"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="fnbx" id="fnbx-privicy" style="display: none">
+        <h1>Обработка данных</h1>
+        <ul class="items">
+          <li class="item">
+            <div class="item-title text-main">1. Что регулирует настоящая политика конфиденциальности</div>
+            <p class="item-content text-3">
+              Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получить о Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе  «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров.
+              <br><br>
+              <span>Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов.</span>
+            </p>
+          </li>
+          <li class="item">
+            <div class="item-title text-main">2. Кто обрабатывает информацию</div>
+            <p class="item-content text-3">Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+          </li>
+          <li class="item">
+            <div class="item-title text-main">3. Какова цель данной Политики</div>
+            <p class="item-content text-3">Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.</p>
+          </li>
+          <li class="item">
+            <div class="item-title text-main">4. Какую Персональную информацию о Вас собирает Гросс маркет</div>
+            <p class="item-content text-3">Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer bg-gray">
+      <div class="container container-top">
+        <div class="footer-top bg-white"><a class="footer__logo" href="">
+            <div class="footer__logo--icon"><svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 10C16.299 10 21 14.4772 21 20C21 25.5228 16.299 30 10.5 30C4.70101 30 -1.95703e-07 25.5228 -4.37114e-07 20C-6.78525e-07 14.4772 4.70101 10 10.5 10Z" fill="url(#paint0_radial_20_530)"/>
+<path d="M10.5 5C16.299 5 21 9.47715 21 15C21 20.5228 16.299 25 10.5 25C4.70101 25 -1.95703e-07 20.5228 -4.37114e-07 15C-6.78525e-07 9.47715 4.70101 5 10.5 5Z" fill="url(#paint1_radial_20_530)"/>
+<path d="M10.5 -4.5897e-07C16.299 -7.12451e-07 21 4.47715 21 10C21 15.5228 16.299 20 10.5 20C4.70101 20 -1.95703e-07 15.5228 -4.37114e-07 10C-6.78525e-07 4.47715 4.70101 -2.05488e-07 10.5 -4.5897e-07Z" fill="url(#paint2_radial_20_530)"/>
+<defs>
+<radialGradient id="paint0_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 27.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint1_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.45 -5) rotate(63.0922) scale(27.0685 28.4998)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+<radialGradient id="paint2_radial_20_530" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.90789 17.6316) rotate(-40.6629) scale(18.5775 19.3459)">
+<stop stop-color="#FF5555"/>
+<stop offset="1" stop-color="#FFDE31"/>
+</radialGradient>
+</defs>
+</svg>
+
+            </div>
+            <div class="footer__logo--text h2">гросс маркет</div></a>
+          <div class="footer__links"><a class="footer__links--share h2" href="./index.html">поделиться</a>
+            <div class="footer__links--soc"><a class="footer__links--fb" href="./index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="iconmonstr-facebook-4 1" clip-path="url(#clip0_29_646)">
+<path id="Vector" d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15 8H13.65C13.112 8 13 8.221 13 8.778V10H15L14.791 12H13V19H10V12H8V10H10V7.692C10 5.923 10.931 5 13.029 5H15V8Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_29_646">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a><a class="footer__links--vk" href="./index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_29_648)">
+<path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.344 16.163H16.477C15.422 16.163 15.245 15.562 14.375 14.694C13.59 13.909 13.155 14.511 13.173 15.629C13.179 15.926 13.032 16.163 12.678 16.163C11.573 16.163 9.984 16.319 8.374 14.583C6.727 12.804 5 9.235 5 8.884C5 8.676 5.172 8.583 5.459 8.583H7.357C7.86 8.583 7.902 8.832 8.043 9.151C8.627 10.482 10.024 13.153 10.397 11.662C10.611 10.806 10.698 8.823 9.782 8.652C9.262 8.556 10.178 8 11.504 8C11.834 8 12.192 8.035 12.558 8.12C13.231 8.276 13.234 8.578 13.224 9.018C13.19 10.684 12.989 11.804 13.428 12.087C13.847 12.358 14.949 10.585 15.532 9.216C15.691 8.838 15.723 8.584 16.175 8.584H18.497C19.713 8.584 18.338 10.332 17.287 11.696C16.44 12.795 16.485 12.816 17.47 13.73C18.171 14.381 19 15.27 19 15.773C19 16.011 18.814 16.163 18.344 16.163Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_29_648">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer__copyright text-2">&copy; Гросс маркет %year%</div><a class="footer__privicy-policy text-2" data-fancybox href="#fnbx-privicy">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script src="./assets/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./assets/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="./assets/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/scripts.min.js?v=<?= time() ?>"></script>
+  </body>
+</html>

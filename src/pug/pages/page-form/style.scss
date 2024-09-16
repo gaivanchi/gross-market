@@ -1,0 +1,265 @@
+.page-form {
+    margin-bottom: 48px;
+  @include breakpoint(sm) {
+    margin-bottom: 72px;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: 72px;
+  }
+  h1 {
+    margin: 48px 0;
+    @include breakpoint(sm) {
+      margin: 72px 0;
+    }
+    @include breakpoint(lg) {
+      margin: 72px 0 48px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      gap: 72px;
+    }
+    @include breakpoint(lg) {
+      flex-direction: row;
+      gap: 125px;
+    }
+    &__form {
+      .form {
+        width: auto;
+        @include breakpoint(lg) {
+          width: 540px;
+        }
+        &-group {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          @include breakpoint(sm) {
+            flex-direction: row;
+          }
+          .form-item {
+            width: auto;
+            @include breakpoint(sm) {
+              width: 50%;
+            }
+            .form-control {
+              width: auto;
+              @include breakpoint(sm) {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          label,
+          .label {
+            position: relative;
+            align-self: flex-start;
+            // display: inline-block;
+            font-family: $mainfont;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+          }
+          select {
+            // color: $darkGray-color;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url(../img/svg/select_gray.svg);
+            background-size: 24px;
+            background-position: calc(100% - 16px) center;
+            background-repeat: no-repeat;
+            option {
+              font-family: $mainfont;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: normal;
+              // &.placeholder {
+              //   color: $darkGray-color;
+              // }
+            }
+          }
+          textarea {
+            height: 94px;
+          }
+          &.radio {
+            .radio-buttons {
+              display: flex;
+              align-items: center;
+              gap: 91px;
+              margin-top: 24px;
+              @include breakpoint(sm) {
+                gap: 72px;
+              }
+              @include breakpoint(lg) {
+                gap: 32px;
+              }
+              .radio-button {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              }
+            }
+          }
+          &.file {
+            position: relative;
+            border-radius: 8px;
+            background: url(../img/svg/clip.svg) 16px center / 24px no-repeat $gray-color;
+            padding: 15px 16px 15px 52px;
+            margin-top: -20px;
+            input {
+              opacity: 0;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+            }
+            label {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              color: $darkGray-color;
+              &.black-text {
+                color: $black-color;
+              }
+            }
+          }
+          .checkbox-agreement {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            margin-top: -6px;
+          }
+          .checkbox-captcha {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            background-image: url(../img/svg/captcha.svg);
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-position: calc(100% - 16px) center;
+            background-color: $gray-color;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 12px;
+            &.bg-lightRed {
+              background-color: $lightRed-color;
+            }
+          }
+          &.note {
+            color: $darkGray-color;
+            margin-top: 0;
+            @include breakpoint(sm) {
+              margin-top: 36px;
+            }
+          }
+          &.valid label:first-child::after,
+          &.valid .label::after {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-image: url(../img/svg/check_green.svg);
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-position: center;
+            position: absolute;
+            right: -32px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .input-error {
+            font-family: $mainfont;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            color: $red-color;
+            position: absolute;
+            left: 0;
+            top: calc(100% + 2px);
+          }
+        }
+        &-control {
+          font-family: $mainfont;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: normal;
+          background-color: $gray-color;
+          padding: 12px 16px;
+          border-radius: 8px;
+          margin-top: 12px;
+          &.bg-lightRed {
+            background-color: $lightRed-color;
+            option {
+              background-color: $white-color;
+            }
+          }
+          &::placeholder,
+          .placeholder {
+            color: $darkGray-color;
+          }
+        }
+        input[type='submit'] {
+          color: $black-color;
+          width: 100%;
+          border-radius: 8px;
+          padding: 12px 16px;
+          margin-top: -6px;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $yellow-color;
+          }
+        }
+        input[type='text'],
+        input[type='tel'],
+        input[type='email'],
+        textarea {
+          &:hover {
+            cursor: text;
+          }
+        }
+        & > .form-item,
+        & > .form-group {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__text {
+      @include breakpoint(sm) {
+
+      }
+      @include breakpoint(lg) {
+      
+      }
+      p {
+        margin-top: 24px;
+      }
+      a.phone {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 8px;
+        padding: 22px;
+        margin-top: 32px;
+        transition: all 0.3s;
+        @include breakpoint(sm) {
+          margin-top: 24px;
+        }
+        &:hover {
+          background-color: $yellow-color;
+        }
+      }
+    }
+  }
+}

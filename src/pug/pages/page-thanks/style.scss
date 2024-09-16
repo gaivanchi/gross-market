@@ -1,0 +1,63 @@
+.page-thanks {
+  flex-grow: 1;
+  margin: 48px 0;
+  @include breakpoint(sm) {
+    margin: 72px 0;
+  }
+  @include breakpoint(lg) {
+    margin: 72px 0 180px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      gap: 72px;
+    }
+    @include breakpoint(lg) {
+      flex-direction: row;
+      gap: 125px;
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: auto;
+      margin-top: 32px;
+      @include breakpoint(sm) {
+        width: auto;
+        margin-top: 48px;
+      }
+      @include breakpoint(lg) {
+        width: 540px;
+        margin-top: 48px;
+      }
+      p.text-2 {
+        padding-left: 12px;
+        border-left: 3px solid $yellow-color;         
+      }
+    }
+    &-right {
+      flex-grow: 0;
+      @include breakpoint(lg) {
+        flex-grow: 1;
+      }
+      a.phone {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 8px;
+        padding: 22px;
+        margin-top: 32px;
+        transition: all 0.3s;
+        @include breakpoint(sm) {
+          margin-top: 24px;
+        }
+        &:hover {
+          background-color: $yellow-color;
+        }
+      }
+    }
+  }
+}

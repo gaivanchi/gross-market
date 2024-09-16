@@ -1,0 +1,16 @@
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no')
+  meta(name='title' content=project.meta.title)
+  meta(name='description' content=project.meta.description)
+  meta(property='og:image' content=`${project.slug}${project.meta.image}`)
+  meta(property='og:title' content=project.meta.title_soc)
+  meta(property='og:description' content=project.meta.description_soc)
+  meta(property='og:type' content='website')
+  title=project.meta.title
+  link(rel='image_src' href=`${project.slug}${project.meta.image}`)
+  include ./favicon/favicon.pug
+  link(rel="stylesheet" href="./assets/owl.carousel/dist/assets/owl.carousel.min.css")
+  link(rel="stylesheet" href="./assets/@fancyapps/fancybox/dist/jquery.fancybox.min.css")
+  link(rel="stylesheet" href!="./css/style.css?v=<?= time() ?>")
