@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // отображение названия прикрепленного файла
-  $('input[type="file"]').on('change', function(){
+  $('input[type="file"]').on('change', function() {
     const $input = $(this);
     const $label = $input.parent().find('label');
     const fileName = $input[0]?.files[0]?.name; 
@@ -141,9 +141,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // слайдеры
   const bannersNavHandler = function() {
-    $items = $('.banners .owl-item');
-    $prev = $('.banners-prev');
-    $next = $('.banners-next');
+    const $items = $('.banners .owl-item');
+    const $prev = $('.banners-prev');
+    const $next = $('.banners-next');
 
     $prev.removeClass('disabled');
     $next.removeClass('disabled');
@@ -190,9 +190,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   const cardsNavHandler = function() {
-    $items = $('.cards .owl-item');
-    $prev = $('.cards-prev');
-    $next = $('.cards-next');
+    const $items = $('.cards .owl-item');
+    const $prev = $('.cards-prev');
+    const $next = $('.cards-next');
 
     $prev.removeClass('disabled');
     $next.removeClass('disabled');
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ymaps.ready(init);
 
   function init() {
-    var myMap = new ymaps.Map("map", {
+    const myMap = new ymaps.Map("map", {
       center: [55.755821, 37.617635],
       zoom: 12,
       controls: [

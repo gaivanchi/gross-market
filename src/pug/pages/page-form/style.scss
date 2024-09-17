@@ -102,9 +102,27 @@
                 gap: 32px;
               }
               .radio-button {
-                display: flex;
-                align-items: center;
-                gap: 12px;
+                input {
+                  display: none;
+                  &:checked {
+                    & + label::before {
+                      background-color: $black-color;
+                    }
+                  }
+                }
+                label {
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                  &::before {
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    background-color: $gray-color;
+                    border: 7px solid $gray-color;
+                    border-radius: 50%;
+                  }
+                }
               }
             }
           }

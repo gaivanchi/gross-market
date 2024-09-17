@@ -32,7 +32,8 @@
     "node-notifier": "^10.0.1",
     "node-sass": "^9.0.0",
     "pug": "^3.0.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "stylus": "^0.61.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",

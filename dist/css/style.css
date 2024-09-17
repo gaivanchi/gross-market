@@ -898,10 +898,24 @@ h3,
     gap: 32px;
   }
 }
-.page-form .content__form .form-item.radio .radio-buttons .radio-button {
+.page-form .content__form .form-item.radio .radio-buttons .radio-button input {
+  display: none;
+}
+.page-form .content__form .form-item.radio .radio-buttons .radio-button input:checked + label::before {
+  background-color: #000;
+}
+.page-form .content__form .form-item.radio .radio-buttons .radio-button label {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.page-form .content__form .form-item.radio .radio-buttons .radio-button label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #F5F5F5;
+  border: 7px solid #F5F5F5;
+  border-radius: 50%;
 }
 .page-form .content__form .form-item.file {
   position: relative;
