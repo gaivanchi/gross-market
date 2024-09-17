@@ -150,18 +150,49 @@
               }
             }
           }
+          .checkbox-agreement,
+          .checkbox-captcha {
+            input {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 0;
+              height: 0;
+              visibility: hidden;
+              opacity: 0;
+              &:checked {
+                & + label::before {
+                  background-image: url(../img/svg/check_black.svg);
+                  background-repeat: no-repeat;
+                  background-size: 24px;
+                  background-position: center;
+                }
+              }
+            }
+            label {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              &::before {
+                flex-shrink: 0;
+                content: '';
+                width: 24px;
+                height: 24px;
+                border-radius: 8px;
+              }
+            }
+          }
           .checkbox-agreement {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
             margin-top: -6px;
+            label {
+              align-items: flex-start;
+              &::before {
+                background-color: $gray-color;
+                margin-top: 6px;
+              }
+            }
           }
           .checkbox-captcha {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
             background-image: url(../img/svg/captcha.svg);
             background-repeat: no-repeat;
             background-size: 24px;
@@ -170,6 +201,9 @@
             padding: 12px 16px;
             border-radius: 8px;
             margin-top: 12px;
+            label::before {
+              background-color: $white-color;
+            }
             &.bg-lightRed {
               background-color: $lightRed-color;
             }

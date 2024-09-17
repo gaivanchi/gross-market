@@ -54,13 +54,13 @@ html
                 .form-item
                   .label Капча
                   .checkbox-captcha
-                    input(type="checkbox" name="captcha" required)
-                    label я не робот
+                    input(type="checkbox" name="captcha" id="captcha" required)
+                    label(for="captcha") я не робот
                 .form-item.note.text-2 * поля для обязательного заполнения
               .form-item
                 .checkbox-agreement
-                  input(type="checkbox" name="agreement" required)
-                  label я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений&nbsp;*
+                  input(type="checkbox" name="agreement" id="agreement" required)
+                  label(for="agreement") я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений&nbsp;*
               input.text-main.bg-gray(type="submit" value="отправить")
 
           .content__text
