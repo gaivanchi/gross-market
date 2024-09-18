@@ -686,13 +686,13 @@ h3,
     height: 540px;
   }
 }
+.page-main .block-4 .map-container #map .ymaps-2-1-79-ground-pane {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
 .page-main .block-4 .map-container #map .ymaps-2-1-79-copyrights-pane {
   visibility: hidden;
   opacity: 0;
-}
-.page-main .block-4 .map-container #map canvas {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
 }
 .page-main .block-4 .map-controls {
   position: relative;

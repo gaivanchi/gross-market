@@ -383,13 +383,13 @@
         @include breakpoint(lg) {
           height: 540px;
         }
+        .ymaps-2-1-79-ground-pane {
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+        }
         .ymaps-2-1-79-copyrights-pane {
           visibility: hidden;
           opacity: 0;
-        }
-        canvas{
-          filter: grayscale(100%);
-          -webkit-filter: grayscale(100%);
         }
       }
     }
